@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Enterprise Digital Banking Platform</title>
+    <style>
+        body { margin:0; font-family: system-ui, sans-serif; background:#0f172a; color:#e2e8f0; }
+        .wrap { max-width:720px; margin:0 auto; padding:48px 20px; }
+        h1 { font-size:28px; margin-bottom:6px; }
+        p.sub { color:#94a3b8; margin-top:0; }
+        .tags span { display:inline-block; background:#1e293b; padding:4px 10px; border-radius:6px; margin:4px 4px 0 0; font-size:13px; }
+        .btns { margin:28px 0; }
+        .btns a { display:inline-block; padding:10px 18px; margin-right:10px; border-radius:8px; text-decoration:none; font-weight:600; }
+        .primary { background:#3b82f6; color:#fff; }
+        .secondary { background:#1e293b; color:#e2e8f0; }
+        .note { background:#1e293b; padding:12px 16px; border-radius:8px; color:#94a3b8; font-size:14px; }
+        ul { line-height:1.8; }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <h1>Enterprise Digital Banking Platform</h1>
+    <p class="sub">REST API backend by Prajeet Dubey</p>
+
+    <div class="tags">
+        <span>Java 21</span><span>Spring Boot</span><span>Spring Security + JWT</span>
+        <span>MySQL</span><span>Redis</span><span>Kafka</span><span>Docker</span>
+    </div>
+
+    <div class="btns">
+        <a class="primary" href="/swagger-ui.html">Try the API (Swagger)</a>
+        <a class="secondary" href="https://github.com/prajeetdubey/enterprise-digital-banking-platform">GitHub</a>
+    </div>
+
+    <h3>Features</h3>
+    <ul>
+        <li>JWT authentication with refresh tokens, role-based access (USER / ADMIN)</li>
+        <li>Accounts, branches and fund transfers</li>
+        <li>Event-driven audit, email and notification services via Kafka</li>
+        <li>Redis caching, audit logging, login history</li>
+    </ul>
+
+    <p class="note">Hosted on a free instance. If the page is slow on first load, it is waking up (about 1 minute).</p>
+</div>
+</body>
+</html>

@@ -52,6 +52,8 @@ public class SecurityConfig {
                         // Public APIs
                         .requestMatchers("/auth/**").permitAll()
                         .requestMatchers(HttpMethod.POST, "/users").permitAll()
+                        .requestMatchers("/auth/**").permitAll()
+                        .requestMatchers("/", "/index.html", "/swagger-ui.html", "/swagger-ui/**", "/v3/api-docs/**").permitAll()
 
                         // TEMPORARY (Development)
                         .requestMatchers("/api/branches/**").permitAll()
